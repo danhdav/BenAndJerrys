@@ -1,0 +1,18 @@
+.header-container {
+  background-color: #f7f7f7; /* Light gray background */
+  padding: 20px;
+  border-bottom: 2px solid #ccc; /* Subtle border at the bottom */
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  color: #333; /* Dark gray text */
+  margin: 0;
+}
+
+.header-content h2 {
+  font-size: 1.5rem;
+  color: #555; /* Medium gray text */
+  margin: 5px 0 0;
+}

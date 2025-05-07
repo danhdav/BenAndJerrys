@@ -1,0 +1,79 @@
+:root {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Ice-cream color palette */
+  --background-gradient: linear-gradient(135deg, #a8d5e2, #ffffff); /* Light blue to white gradient */
+  --button-gradient: linear-gradient(135deg, #f9a8d4, #fdd365); /* Pink to yellow gradient */
+  --primary-color: #f9a8d4; /* Strawberry pink */
+  --secondary-color: #a8d5e2; /* Mint blue */
+  --accent-color: #fdd365; /* Lemon yellow */
+  --text-color: #4a4a4a; /* Neutral dark gray for text */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background-gradient); /* Apply light blue to white gradient background */
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--secondary-color);
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--accent-color);
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--button-gradient); /* Apply pink to yellow gradient */
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--primary-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-gradient: linear-gradient(135deg, #a8d5e2, #ffffff); /* Light blue to white gradient */
+    --text-color: #4a4a4a;
+  }
+}

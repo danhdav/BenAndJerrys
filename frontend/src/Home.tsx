@@ -3,6 +3,7 @@ import App from './ManageEmployees.tsx';
 import ManageProducts from './ManageProducts.tsx';
 import { useState } from 'react';
 import Header from './components/Header'; // Import the Header component
+import ManageOrders from './ManageOrders.tsx';
 
 function Main() {
   const [activeComponent, setActiveComponent] = useState<string | null>(null);
@@ -21,7 +22,7 @@ function Main() {
         {/* Conditionally render components */}
         {activeComponent === 'employees' && <App />}
         {activeComponent === 'products' && <ManageProducts />}
-        {activeComponent === 'orders' && <p>Orders management coming soon...</p>}
+        {activeComponent === 'orders' && <ManageOrders />}
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import './index.css';
 import App from './ManageEmployees.tsx';
+import ManageProducts from './ManageProducts.tsx';
 import { useState } from 'react';
 import Header from './components/Header'; // Import the Header component
 
@@ -19,7 +20,7 @@ function Main() {
       <div>
         {/* Conditionally render components */}
         {activeComponent === 'employees' && <App />}
-        {activeComponent === 'products' && <p>Products management coming soon...</p>}
+        {activeComponent === 'products' && <ManageProducts />}
         {activeComponent === 'orders' && <p>Orders management coming soon...</p>}
       </div>
     </div>
